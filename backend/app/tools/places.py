@@ -21,8 +21,8 @@ def build_query(
     radius_m: int,
     notable_only: bool = False,
 ) -> str:
-    # The caller already chooses the scan radius; avoid shrinking a valid city-sized query.
-    radius_m = max(int(radius_m), 4000)
+    # Bound the query size so a large city cannot trigger an unnecessarily expensive request.
+    radius_m = min(max(int(radius_m), 4000), 15000)
     a = f"(around:{radius_m},{lat:.5f},{lon:.5f})"
     notable = '["wikidata"]' if notable_only else ''
 
@@ -156,7 +156,7 @@ class OverpassProvider:
         lon: float,
         radius_m: int,
     ) -> NearbyResult:
-        radius_m = max(int(radius_m), 4000)
+        radius_m = min(max(int(radius_m), 4000), 15000)
         key = (round(lat, 3), round(lon, 3), radius_m)
 
         hit = self._cache.get(key)
