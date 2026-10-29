@@ -1,0 +1,500 @@
+{
+ "id": "jaipur",
+ "name": "Jaipur",
+ "aliases": [
+  "jaipur",
+  "pink city"
+ ],
+ "country": "India",
+ "lat": 26.9124,
+ "lon": 75.7873,
+ "peak_months": [
+  10,
+  11,
+  12,
+  1,
+  2,
+  3
+ ],
+ "peak_multiplier": 1.2,
+ "notes": "Costs and timings are planning estimates (2025-26). Verify opening hours and prices before booking.",
+ "areas": [
+  {
+   "id": "old_city",
+   "name": "Old City (Hawa Mahal, City Palace)",
+   "lat": 26.9239,
+   "lon": 75.8267
+  },
+  {
+   "id": "fort_ridge",
+   "name": "Fort Ridge (Amber, Nahargarh)",
+   "lat": 26.9855,
+   "lon": 75.8513
+  },
+  {
+   "id": "new_city",
+   "name": "New Jaipur",
+   "lat": 26.9124,
+   "lon": 75.7873
+  }
+ ],
+ "travel_minutes": [
+  [
+   "old_city",
+   "old_city",
+   10
+  ],
+  [
+   "fort_ridge",
+   "fort_ridge",
+   10
+  ],
+  [
+   "new_city",
+   "new_city",
+   10
+  ],
+  [
+   "old_city",
+   "fort_ridge",
+   30
+  ],
+  [
+   "old_city",
+   "new_city",
+   25
+  ],
+  [
+   "fort_ridge",
+   "new_city",
+   45
+  ]
+ ],
+ "stay_options": [
+  {
+   "tier": "budget",
+   "area": "old_city",
+   "nightly_low": 1200,
+   "nightly_high": 2200,
+   "note": "Hostels and guesthouses near the bazaars"
+  },
+  {
+   "tier": "mid",
+   "area": "old_city",
+   "nightly_low": 3000,
+   "nightly_high": 5000,
+   "note": "Heritage havelis"
+  },
+  {
+   "tier": "mid",
+   "area": "new_city",
+   "nightly_low": 3000,
+   "nightly_high": 4500,
+   "note": "Business hotels, easier parking"
+  },
+  {
+   "tier": "premium",
+   "area": "fort_ridge",
+   "nightly_low": 9000,
+   "nightly_high": 20000,
+   "note": "Palace-style hotels"
+  }
+ ],
+ "food_per_person_day": {
+  "budget": 600,
+  "mid": 1200,
+  "premium": 2500
+ },
+ "transport": [
+  {
+   "id": "cab_day",
+   "mode": "Full-day cab",
+   "cost_inr": 2200,
+   "unit": "per_day_vehicle",
+   "capacity": 4,
+   "note": "Sensible for the fort circuit"
+  },
+  {
+   "id": "auto",
+   "mode": "Auto-rickshaw / app cab",
+   "cost_inr": 700,
+   "unit": "per_day_vehicle",
+   "capacity": 3,
+   "note": "Fine inside the old city"
+  }
+ ],
+ "climate": [
+  {
+   "month": 1,
+   "hi": 22,
+   "lo": 8,
+   "rain": "low"
+  },
+  {
+   "month": 2,
+   "hi": 25,
+   "lo": 11,
+   "rain": "low"
+  },
+  {
+   "month": 3,
+   "hi": 31,
+   "lo": 16,
+   "rain": "low"
+  },
+  {
+   "month": 4,
+   "hi": 37,
+   "lo": 22,
+   "rain": "low"
+  },
+  {
+   "month": 5,
+   "hi": 41,
+   "lo": 27,
+   "rain": "low"
+  },
+  {
+   "month": 6,
+   "hi": 40,
+   "lo": 28,
+   "rain": "moderate"
+  },
+  {
+   "month": 7,
+   "hi": 34,
+   "lo": 26,
+   "rain": "heavy"
+  },
+  {
+   "month": 8,
+   "hi": 32,
+   "lo": 25,
+   "rain": "heavy"
+  },
+  {
+   "month": 9,
+   "hi": 33,
+   "lo": 24,
+   "rain": "moderate"
+  },
+  {
+   "month": 10,
+   "hi": 33,
+   "lo": 19,
+   "rain": "low"
+  },
+  {
+   "month": 11,
+   "hi": 28,
+   "lo": 13,
+   "rain": "low"
+  },
+  {
+   "month": 12,
+   "hi": 24,
+   "lo": 9,
+   "rain": "low"
+  }
+ ],
+ "checklist": [
+  {
+   "label": "Government photo ID for every traveller",
+   "category": "document"
+  },
+  {
+   "label": "Travel insurance (optional but sensible)",
+   "category": "document"
+  },
+  {
+   "label": "Download offline maps",
+   "category": "packing"
+  },
+  {
+   "label": "Book accommodation",
+   "category": "booking"
+  },
+  {
+   "label": "Book travel to the destination",
+   "category": "booking"
+  },
+  {
+   "label": "Carry cash for bazaars and small eateries",
+   "category": "packing"
+  },
+  {
+   "label": "Light cottons, hat and comfortable shoes for the forts",
+   "category": "packing"
+  },
+  {
+   "label": "Book a Chokhi Dhani dinner slot",
+   "category": "booking"
+  }
+ ],
+ "places": [
+  {
+   "id": "amber_fort",
+   "name": "Amber Fort",
+   "area": "fort_ridge",
+   "lat": 26.9855,
+   "lon": 75.8513,
+   "topics": [
+    "culture",
+    "adventure"
+   ],
+   "kind": "sight",
+   "duration_min": 150,
+   "cost_pp": 200,
+   "opens": "08:00",
+   "closes": "17:30",
+   "only_days": [],
+   "closed_months": [],
+   "note": "Hilltop palace-fort. Arrive at opening to avoid queues and heat."
+  },
+  {
+   "id": "jaigarh_fort",
+   "name": "Jaigarh Fort",
+   "area": "fort_ridge",
+   "lat": 26.9857,
+   "lon": 75.8458,
+   "topics": [
+    "culture"
+   ],
+   "kind": "sight",
+   "duration_min": 75,
+   "cost_pp": 70,
+   "opens": "09:00",
+   "closes": "16:30",
+   "only_days": [],
+   "closed_months": [],
+   "note": "Fort above Amber, known for the Jaivana cannon."
+  },
+  {
+   "id": "nahargarh",
+   "name": "Nahargarh Fort",
+   "area": "fort_ridge",
+   "lat": 26.9372,
+   "lon": 75.8156,
+   "topics": [
+    "culture",
+    "nature",
+    "cafes"
+   ],
+   "kind": "sight",
+   "duration_min": 90,
+   "cost_pp": 50,
+   "opens": "10:00",
+   "closes": "17:30",
+   "only_days": [],
+   "closed_months": [],
+   "note": "Best sunset view over the city, with a rooftop cafe."
+  },
+  {
+   "id": "jal_mahal",
+   "name": "Jal Mahal viewpoint",
+   "area": "fort_ridge",
+   "lat": 26.9535,
+   "lon": 75.846,
+   "topics": [
+    "relaxation",
+    "nature"
+   ],
+   "kind": "sight",
+   "duration_min": 30,
+   "cost_pp": 0,
+   "opens": null,
+   "closes": null,
+   "only_days": [],
+   "closed_months": [],
+   "note": "Photo stop on the road to Amber. The palace itself is closed to visitors."
+  },
+  {
+   "id": "panna_meena",
+   "name": "Panna Meena ka Kund",
+   "area": "fort_ridge",
+   "lat": 26.9886,
+   "lon": 75.8512,
+   "topics": [
+    "culture",
+    "nature"
+   ],
+   "kind": "sight",
+   "duration_min": 30,
+   "cost_pp": 0,
+   "opens": "07:00",
+   "closes": "18:00",
+   "only_days": [],
+   "closed_months": [],
+   "note": "Photogenic stepwell close to Amber."
+  },
+  {
+   "id": "hawa_mahal",
+   "name": "Hawa Mahal",
+   "area": "old_city",
+   "lat": 26.9239,
+   "lon": 75.8267,
+   "topics": [
+    "culture"
+   ],
+   "kind": "sight",
+   "duration_min": 45,
+   "cost_pp": 50,
+   "opens": "09:00",
+   "closes": "17:00",
+   "only_days": [],
+   "closed_months": [],
+   "note": "The honeycomb facade is best from the cafes opposite, early morning."
+  },
+  {
+   "id": "city_palace",
+   "name": "City Palace",
+   "area": "old_city",
+   "lat": 26.9258,
+   "lon": 75.8237,
+   "topics": [
+    "culture"
+   ],
+   "kind": "sight",
+   "duration_min": 120,
+   "cost_pp": 300,
+   "opens": "09:30",
+   "closes": "17:00",
+   "only_days": [],
+   "closed_months": [],
+   "note": "Royal residence and museum complex."
+  },
+  {
+   "id": "jantar_mantar",
+   "name": "Jantar Mantar",
+   "area": "old_city",
+   "lat": 26.9247,
+   "lon": 75.8246,
+   "topics": [
+    "culture"
+   ],
+   "kind": "sight",
+   "duration_min": 60,
+   "cost_pp": 50,
+   "opens": "09:00",
+   "closes": "16:30",
+   "only_days": [],
+   "closed_months": [],
+   "note": "18th-century astronomical instruments. UNESCO site, next to City Palace."
+  },
+  {
+   "id": "johari_bazaar",
+   "name": "Johari Bazaar",
+   "area": "old_city",
+   "lat": 26.9188,
+   "lon": 75.8236,
+   "topics": [
+    "shopping",
+    "food"
+   ],
+   "kind": "market",
+   "duration_min": 120,
+   "cost_pp": 0,
+   "opens": "11:00",
+   "closes": "20:30",
+   "only_days": [
+    6
+   ],
+   "closed_months": [],
+   "note": "Jewellery and textiles. Many shops close on Sunday."
+  },
+  {
+   "id": "bapu_bazaar",
+   "name": "Bapu Bazaar",
+   "area": "old_city",
+   "lat": 26.915,
+   "lon": 75.801,
+   "topics": [
+    "shopping"
+   ],
+   "kind": "market",
+   "duration_min": 120,
+   "cost_pp": 0,
+   "opens": "11:00",
+   "closes": "20:30",
+   "only_days": [
+    6
+   ],
+   "closed_months": [],
+   "note": "Juttis, block prints and bags."
+  },
+  {
+   "id": "lmb_sweets",
+   "name": "Laxmi Misthan Bhandar (LMB)",
+   "area": "old_city",
+   "lat": 26.9188,
+   "lon": 75.8236,
+   "topics": [
+    "food"
+   ],
+   "kind": "food",
+   "duration_min": 60,
+   "cost_pp": 500,
+   "opens": "08:00",
+   "closes": "23:00",
+   "only_days": [],
+   "closed_months": [],
+   "note": "Classic Rajasthani sweets and thali."
+  },
+  {
+   "id": "albert_hall",
+   "name": "Albert Hall Museum",
+   "area": "new_city",
+   "lat": 26.9117,
+   "lon": 75.8195,
+   "topics": [
+    "culture"
+   ],
+   "kind": "sight",
+   "duration_min": 75,
+   "cost_pp": 40,
+   "opens": "09:00",
+   "closes": "17:00",
+   "only_days": [],
+   "closed_months": [],
+   "note": "Indo-Saracenic museum building, lovely when lit at night."
+  },
+  {
+   "id": "patrika_gate",
+   "name": "Patrika Gate",
+   "area": "new_city",
+   "lat": 26.842,
+   "lon": 75.814,
+   "topics": [
+    "cafes",
+    "relaxation"
+   ],
+   "kind": "sight",
+   "duration_min": 40,
+   "cost_pp": 0,
+   "opens": null,
+   "closes": null,
+   "only_days": [],
+   "closed_months": [],
+   "note": "Colourful gateway at Jawahar Circle, popular for photographs."
+  },
+  {
+   "id": "chokhi_dhani",
+   "name": "Chokhi Dhani village dinner",
+   "area": "new_city",
+   "lat": 26.765,
+   "lon": 75.833,
+   "topics": [
+    "food",
+    "culture"
+   ],
+   "kind": "food",
+   "duration_min": 180,
+   "cost_pp": 900,
+   "opens": "18:30",
+   "closes": "23:00",
+   "only_days": [],
+   "closed_months": [],
+   "note": "Rajasthani village-style dinner with folk performances."
+  }
+ ]
+}

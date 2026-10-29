@@ -1,0 +1,612 @@
+{
+ "id": "goa",
+ "name": "Goa",
+ "aliases": [
+  "goa",
+  "north goa",
+  "south goa",
+  "panjim",
+  "panaji"
+ ],
+ "country": "India",
+ "lat": 15.4989,
+ "lon": 73.8278,
+ "peak_months": [
+  12,
+  1
+ ],
+ "peak_multiplier": 1.6,
+ "notes": "Costs and timings are planning estimates (2025-26). Verify opening hours and prices before booking.",
+ "areas": [
+  {
+   "id": "north",
+   "name": "North Goa (Baga, Calangute, Anjuna)",
+   "lat": 15.5553,
+   "lon": 73.7517
+  },
+  {
+   "id": "central",
+   "name": "Panjim & Old Goa",
+   "lat": 15.4989,
+   "lon": 73.8278
+  },
+  {
+   "id": "south",
+   "name": "South Goa (Colva, Palolem)",
+   "lat": 15.15,
+   "lon": 73.98
+  },
+  {
+   "id": "east",
+   "name": "Interior (Ponda, Dudhsagar)",
+   "lat": 15.35,
+   "lon": 74.1
+  }
+ ],
+ "travel_minutes": [
+  [
+   "north",
+   "north",
+   15
+  ],
+  [
+   "central",
+   "central",
+   15
+  ],
+  [
+   "south",
+   "south",
+   15
+  ],
+  [
+   "east",
+   "east",
+   15
+  ],
+  [
+   "north",
+   "central",
+   40
+  ],
+  [
+   "north",
+   "south",
+   110
+  ],
+  [
+   "north",
+   "east",
+   105
+  ],
+  [
+   "central",
+   "south",
+   75
+  ],
+  [
+   "central",
+   "east",
+   70
+  ],
+  [
+   "south",
+   "east",
+   80
+  ]
+ ],
+ "stay_options": [
+  {
+   "tier": "budget",
+   "area": "north",
+   "nightly_low": 1500,
+   "nightly_high": 2500,
+   "note": "Guesthouses and hostels near Baga/Anjuna"
+  },
+  {
+   "tier": "mid",
+   "area": "north",
+   "nightly_low": 3500,
+   "nightly_high": 5500,
+   "note": "3-star resorts a short ride from the beach"
+  },
+  {
+   "tier": "premium",
+   "area": "north",
+   "nightly_low": 8000,
+   "nightly_high": 15000,
+   "note": "Beachfront resorts"
+  },
+  {
+   "tier": "budget",
+   "area": "south",
+   "nightly_low": 1200,
+   "nightly_high": 2200,
+   "note": "Beach huts near Palolem"
+  },
+  {
+   "tier": "mid",
+   "area": "south",
+   "nightly_low": 3500,
+   "nightly_high": 5500,
+   "note": "Quieter resorts near Colva/Benaulim"
+  },
+  {
+   "tier": "mid",
+   "area": "central",
+   "nightly_low": 3000,
+   "nightly_high": 4500,
+   "note": "Heritage-style stays in Panjim"
+  }
+ ],
+ "food_per_person_day": {
+  "budget": 700,
+  "mid": 1500,
+  "premium": 3000
+ },
+ "transport": [
+  {
+   "id": "scooter",
+   "mode": "Scooter rental",
+   "cost_inr": 400,
+   "unit": "per_day_vehicle",
+   "capacity": 2,
+   "note": "Needs a valid driving licence"
+  },
+  {
+   "id": "cab_day",
+   "mode": "Full-day cab",
+   "cost_inr": 3000,
+   "unit": "per_day_vehicle",
+   "capacity": 4,
+   "note": "Cheaper than it sounds for 4 people"
+  }
+ ],
+ "climate": [
+  {
+   "month": 1,
+   "hi": 32,
+   "lo": 20,
+   "rain": "low"
+  },
+  {
+   "month": 2,
+   "hi": 32,
+   "lo": 21,
+   "rain": "low"
+  },
+  {
+   "month": 3,
+   "hi": 33,
+   "lo": 23,
+   "rain": "low"
+  },
+  {
+   "month": 4,
+   "hi": 33,
+   "lo": 25,
+   "rain": "low"
+  },
+  {
+   "month": 5,
+   "hi": 33,
+   "lo": 26,
+   "rain": "moderate"
+  },
+  {
+   "month": 6,
+   "hi": 31,
+   "lo": 25,
+   "rain": "heavy"
+  },
+  {
+   "month": 7,
+   "hi": 29,
+   "lo": 24,
+   "rain": "heavy"
+  },
+  {
+   "month": 8,
+   "hi": 29,
+   "lo": 24,
+   "rain": "heavy"
+  },
+  {
+   "month": 9,
+   "hi": 30,
+   "lo": 24,
+   "rain": "heavy"
+  },
+  {
+   "month": 10,
+   "hi": 32,
+   "lo": 24,
+   "rain": "moderate"
+  },
+  {
+   "month": 11,
+   "hi": 33,
+   "lo": 23,
+   "rain": "low"
+  },
+  {
+   "month": 12,
+   "hi": 33,
+   "lo": 21,
+   "rain": "low"
+  }
+ ],
+ "checklist": [
+  {
+   "label": "Government photo ID for every traveller",
+   "category": "document"
+  },
+  {
+   "label": "Travel insurance (optional but sensible)",
+   "category": "document"
+  },
+  {
+   "label": "Download offline maps",
+   "category": "packing"
+  },
+  {
+   "label": "Book accommodation",
+   "category": "booking"
+  },
+  {
+   "label": "Book travel to the destination",
+   "category": "booking"
+  },
+  {
+   "label": "Valid driving licence if renting a scooter",
+   "category": "document"
+  },
+  {
+   "label": "Sunscreen, flip-flops, swimwear",
+   "category": "packing"
+  },
+  {
+   "label": "Reserve the Dudhsagar jeep ride the day before",
+   "category": "booking"
+  }
+ ],
+ "places": [
+  {
+   "id": "fort_aguada",
+   "name": "Fort Aguada",
+   "area": "north",
+   "lat": 15.4925,
+   "lon": 73.7737,
+   "topics": [
+    "culture",
+    "nature"
+   ],
+   "kind": "sight",
+   "duration_min": 75,
+   "cost_pp": 50,
+   "opens": "09:30",
+   "closes": "18:00",
+   "only_days": [],
+   "closed_months": [],
+   "note": "17th-century Portuguese fort with a lighthouse and sea views. Best in late afternoon."
+  },
+  {
+   "id": "baga_beach",
+   "name": "Baga Beach",
+   "area": "north",
+   "lat": 15.5553,
+   "lon": 73.7517,
+   "topics": [
+    "beaches",
+    "nightlife"
+   ],
+   "kind": "sight",
+   "duration_min": 150,
+   "cost_pp": 0,
+   "opens": null,
+   "closes": null,
+   "only_days": [],
+   "closed_months": [],
+   "note": "Busiest beach in the north, with shacks and water sports."
+  },
+  {
+   "id": "calangute_beach",
+   "name": "Calangute Beach",
+   "area": "north",
+   "lat": 15.5439,
+   "lon": 73.7553,
+   "topics": [
+    "beaches",
+    "food"
+   ],
+   "kind": "sight",
+   "duration_min": 120,
+   "cost_pp": 0,
+   "opens": null,
+   "closes": null,
+   "only_days": [],
+   "closed_months": [],
+   "note": "Long, lively beach with plenty of shacks for lunch."
+  },
+  {
+   "id": "water_sports",
+   "name": "Water sports at Baga",
+   "area": "north",
+   "lat": 15.556,
+   "lon": 73.751,
+   "topics": [
+    "adventure",
+    "beaches"
+   ],
+   "kind": "activity",
+   "duration_min": 120,
+   "cost_pp": 1500,
+   "opens": "09:00",
+   "closes": "17:30",
+   "only_days": [],
+   "closed_months": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "note": "Parasailing, jet ski and banana ride packages. Closed in monsoon."
+  },
+  {
+   "id": "chapora_fort",
+   "name": "Chapora Fort",
+   "area": "north",
+   "lat": 15.6055,
+   "lon": 73.7378,
+   "topics": [
+    "culture",
+    "nature"
+   ],
+   "kind": "sight",
+   "duration_min": 60,
+   "cost_pp": 0,
+   "opens": null,
+   "closes": null,
+   "only_days": [],
+   "closed_months": [],
+   "note": "Ruined hilltop fort with a wide coastal view. Go near sunset."
+  },
+  {
+   "id": "anjuna_flea",
+   "name": "Anjuna Flea Market",
+   "area": "north",
+   "lat": 15.5736,
+   "lon": 73.7413,
+   "topics": [
+    "shopping",
+    "food"
+   ],
+   "kind": "market",
+   "duration_min": 150,
+   "cost_pp": 500,
+   "opens": "09:00",
+   "closes": "18:30",
+   "only_days": [
+    2
+   ],
+   "closed_months": [
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "note": "Wednesday-only market in season. Haggle."
+  },
+  {
+   "id": "arpora_night_market",
+   "name": "Saturday Night Market, Arpora",
+   "area": "north",
+   "lat": 15.56,
+   "lon": 73.77,
+   "topics": [
+    "shopping",
+    "food"
+   ],
+   "kind": "market",
+   "duration_min": 150,
+   "cost_pp": 600,
+   "opens": "18:00",
+   "closes": "23:30",
+   "only_days": [
+    5
+   ],
+   "closed_months": [
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "note": "Saturday evenings in season. Food stalls, live music and crafts."
+  },
+  {
+   "id": "titos_lane",
+   "name": "Tito's Lane clubs",
+   "area": "north",
+   "lat": 15.553,
+   "lon": 73.751,
+   "topics": [
+    "nightlife"
+   ],
+   "kind": "nightlife",
+   "duration_min": 150,
+   "cost_pp": 1000,
+   "opens": "20:00",
+   "closes": "23:59",
+   "only_days": [],
+   "closed_months": [
+    6,
+    7,
+    8
+   ],
+   "note": "Baga's main club strip. Expect loud music and cover charges."
+  },
+  {
+   "id": "fontainhas",
+   "name": "Fontainhas Latin Quarter",
+   "area": "central",
+   "lat": 15.4967,
+   "lon": 73.831,
+   "topics": [
+    "culture",
+    "cafes",
+    "food"
+   ],
+   "kind": "sight",
+   "duration_min": 90,
+   "cost_pp": 0,
+   "opens": null,
+   "closes": null,
+   "only_days": [],
+   "closed_months": [],
+   "note": "Painted Portuguese-era lanes in Panjim with small cafes."
+  },
+  {
+   "id": "mandovi_cruise",
+   "name": "Mandovi River Cruise",
+   "area": "central",
+   "lat": 15.5,
+   "lon": 73.825,
+   "topics": [
+    "relaxation",
+    "culture"
+   ],
+   "kind": "activity",
+   "duration_min": 60,
+   "cost_pp": 400,
+   "opens": "18:00",
+   "closes": "21:00",
+   "only_days": [],
+   "closed_months": [
+    6,
+    7,
+    8
+   ],
+   "note": "Evening cruise with a folk dance show."
+  },
+  {
+   "id": "bom_jesus",
+   "name": "Basilica of Bom Jesus",
+   "area": "central",
+   "lat": 15.5009,
+   "lon": 73.9116,
+   "topics": [
+    "culture"
+   ],
+   "kind": "sight",
+   "duration_min": 60,
+   "cost_pp": 0,
+   "opens": "09:00",
+   "closes": "18:30",
+   "only_days": [],
+   "closed_months": [],
+   "note": "UNESCO World Heritage church holding the relics of St Francis Xavier."
+  },
+  {
+   "id": "se_cathedral",
+   "name": "Se Cathedral",
+   "area": "central",
+   "lat": 15.5033,
+   "lon": 73.9094,
+   "topics": [
+    "culture"
+   ],
+   "kind": "sight",
+   "duration_min": 40,
+   "cost_pp": 0,
+   "opens": "07:30",
+   "closes": "18:00",
+   "only_days": [],
+   "closed_months": [],
+   "note": "One of Asia's largest churches. Pairs well with Bom Jesus."
+  },
+  {
+   "id": "spice_plantation",
+   "name": "Spice plantation tour",
+   "area": "east",
+   "lat": 15.405,
+   "lon": 74.01,
+   "topics": [
+    "nature",
+    "food"
+   ],
+   "kind": "activity",
+   "duration_min": 150,
+   "cost_pp": 600,
+   "opens": "09:00",
+   "closes": "16:00",
+   "only_days": [],
+   "closed_months": [],
+   "note": "Guided walk with a Goan lunch included."
+  },
+  {
+   "id": "dudhsagar",
+   "name": "Dudhsagar Falls",
+   "area": "east",
+   "lat": 15.3144,
+   "lon": 74.3143,
+   "topics": [
+    "nature",
+    "adventure"
+   ],
+   "kind": "activity",
+   "duration_min": 300,
+   "cost_pp": 900,
+   "opens": "08:30",
+   "closes": "16:30",
+   "only_days": [],
+   "closed_months": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "note": "Four-tier waterfall reached by jeep from Collem. Start early. Closed in monsoon."
+  },
+  {
+   "id": "colva_beach",
+   "name": "Colva Beach",
+   "area": "south",
+   "lat": 15.28,
+   "lon": 73.922,
+   "topics": [
+    "beaches",
+    "relaxation"
+   ],
+   "kind": "sight",
+   "duration_min": 120,
+   "cost_pp": 0,
+   "opens": null,
+   "closes": null,
+   "only_days": [],
+   "closed_months": [],
+   "note": "Wide, calmer beach in the south."
+  },
+  {
+   "id": "palolem_beach",
+   "name": "Palolem Beach",
+   "area": "south",
+   "lat": 15.01,
+   "lon": 74.0232,
+   "topics": [
+    "beaches",
+    "relaxation",
+    "cafes"
+   ],
+   "kind": "sight",
+   "duration_min": 180,
+   "cost_pp": 0,
+   "opens": null,
+   "closes": null,
+   "only_days": [],
+   "closed_months": [],
+   "note": "Crescent bay with a laid-back cafe scene. Far from the north."
+  }
+ ]
+}

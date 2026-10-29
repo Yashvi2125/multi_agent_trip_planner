@@ -1,0 +1,16 @@
+fastapi==0.115.*
+uvicorn[standard]==0.32.*
+pydantic[email]==2.*
+pydantic-settings==2.*
+sqlalchemy==2.0.*
+psycopg[binary]==3.2.*
+alembic==1.14.*
+pyjwt==2.*
+bcrypt==4.*
+python-multipart
+langgraph
+langgraph-checkpoint-postgres
+psycopg[pool]
+pytest
+httpx
+pytest-timeout

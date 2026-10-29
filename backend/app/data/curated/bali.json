@@ -1,0 +1,726 @@
+{
+ "id": "bali",
+ "name": "Bali",
+ "aliases": [
+  "bali",
+  "ubud",
+  "seminyak",
+  "canggu",
+  "kuta",
+  "uluwatu",
+  "jimbaran",
+  "denpasar",
+  "sanur"
+ ],
+ "country": "Indonesia",
+ "lat": -8.4095,
+ "lon": 115.1889,
+ "peak_months": [
+  7,
+  8,
+  12,
+  1
+ ],
+ "peak_multiplier": 1.4,
+ "notes": "Costs and timings are planning estimates, converted to INR at roughly Rp 190 = ₹1 and rounded. Exchange rates, entry fees and opening hours change, so verify before booking.",
+ "areas": [
+  {
+   "id": "ubud",
+   "name": "Ubud & surroundings",
+   "lat": -8.5069,
+   "lon": 115.2625
+  },
+  {
+   "id": "seminyak",
+   "name": "Seminyak, Canggu & Kuta",
+   "lat": -8.6913,
+   "lon": 115.1683
+  },
+  {
+   "id": "uluwatu",
+   "name": "Uluwatu & Jimbaran",
+   "lat": -8.8291,
+   "lon": 115.0849
+  },
+  {
+   "id": "kintamani",
+   "name": "Kintamani (Mount Batur)",
+   "lat": -8.2426,
+   "lon": 115.375
+  },
+  {
+   "id": "nusa",
+   "name": "Nusa Penida (island)",
+   "lat": -8.7275,
+   "lon": 115.5444
+  },
+  {
+   "id": "tanah_lot",
+   "name": "Tanah Lot (west coast)",
+   "lat": -8.6212,
+   "lon": 115.0868
+  }
+ ],
+ "travel_minutes": [
+  [
+   "ubud",
+   "ubud",
+   15
+  ],
+  [
+   "seminyak",
+   "seminyak",
+   15
+  ],
+  [
+   "uluwatu",
+   "uluwatu",
+   15
+  ],
+  [
+   "kintamani",
+   "kintamani",
+   15
+  ],
+  [
+   "nusa",
+   "nusa",
+   15
+  ],
+  [
+   "tanah_lot",
+   "tanah_lot",
+   15
+  ],
+  [
+   "ubud",
+   "seminyak",
+   60
+  ],
+  [
+   "ubud",
+   "uluwatu",
+   90
+  ],
+  [
+   "ubud",
+   "kintamani",
+   60
+  ],
+  [
+   "ubud",
+   "nusa",
+   150
+  ],
+  [
+   "ubud",
+   "tanah_lot",
+   75
+  ],
+  [
+   "seminyak",
+   "uluwatu",
+   60
+  ],
+  [
+   "seminyak",
+   "kintamani",
+   105
+  ],
+  [
+   "seminyak",
+   "nusa",
+   140
+  ],
+  [
+   "seminyak",
+   "tanah_lot",
+   45
+  ],
+  [
+   "uluwatu",
+   "kintamani",
+   135
+  ],
+  [
+   "uluwatu",
+   "nusa",
+   150
+  ],
+  [
+   "uluwatu",
+   "tanah_lot",
+   90
+  ],
+  [
+   "kintamani",
+   "nusa",
+   170
+  ],
+  [
+   "kintamani",
+   "tanah_lot",
+   120
+  ],
+  [
+   "nusa",
+   "tanah_lot",
+   165
+  ]
+ ],
+ "stay_options": [
+  {
+   "tier": "budget",
+   "area": "ubud",
+   "nightly_low": 1800,
+   "nightly_high": 3000,
+   "note": "Homestays and guesthouses near the centre"
+  },
+  {
+   "tier": "mid",
+   "area": "ubud",
+   "nightly_low": 5000,
+   "nightly_high": 9000,
+   "note": "Boutique villas, usually with a pool"
+  },
+  {
+   "tier": "premium",
+   "area": "ubud",
+   "nightly_low": 16000,
+   "nightly_high": 35000,
+   "note": "Jungle-view resorts"
+  },
+  {
+   "tier": "budget",
+   "area": "seminyak",
+   "nightly_low": 2000,
+   "nightly_high": 3500,
+   "note": "Guesthouses and hostels a short ride from the beach"
+  },
+  {
+   "tier": "mid",
+   "area": "seminyak",
+   "nightly_low": 5500,
+   "nightly_high": 10000,
+   "note": "Villas and boutique hotels"
+  },
+  {
+   "tier": "premium",
+   "area": "seminyak",
+   "nightly_low": 18000,
+   "nightly_high": 40000,
+   "note": "Beachfront resorts"
+  },
+  {
+   "tier": "budget",
+   "area": "uluwatu",
+   "nightly_low": 1800,
+   "nightly_high": 3000,
+   "note": "Surf-style guesthouses"
+  },
+  {
+   "tier": "mid",
+   "area": "uluwatu",
+   "nightly_low": 5000,
+   "nightly_high": 9500,
+   "note": "Clifftop villas"
+  }
+ ],
+ "food_per_person_day": {
+  "budget": 900,
+  "mid": 2200,
+  "premium": 5000
+ },
+ "transport": [
+  {
+   "id": "cab_day",
+   "mode": "Private driver (full day)",
+   "cost_inr": 4200,
+   "unit": "per_day_vehicle",
+   "capacity": 4,
+   "note": "The easiest way to cover Bali's long drives"
+  },
+  {
+   "id": "scooter",
+   "mode": "Scooter rental",
+   "cost_inr": 450,
+   "unit": "per_day_vehicle",
+   "capacity": 2,
+   "note": "Needs a valid licence (international permit) and a helmet; roads are busy"
+  },
+  {
+   "id": "nusa_boat",
+   "mode": "Nusa Penida island driver",
+   "cost_inr": 3500,
+   "unit": "per_trip_vehicle",
+   "capacity": 4,
+   "note": "The fast-boat fare is counted in the Nusa Penida stop"
+  }
+ ],
+ "climate": [
+  {
+   "month": 1,
+   "hi": 30,
+   "lo": 24,
+   "rain": "heavy"
+  },
+  {
+   "month": 2,
+   "hi": 30,
+   "lo": 24,
+   "rain": "heavy"
+  },
+  {
+   "month": 3,
+   "hi": 31,
+   "lo": 24,
+   "rain": "moderate"
+  },
+  {
+   "month": 4,
+   "hi": 31,
+   "lo": 24,
+   "rain": "moderate"
+  },
+  {
+   "month": 5,
+   "hi": 31,
+   "lo": 24,
+   "rain": "low"
+  },
+  {
+   "month": 6,
+   "hi": 30,
+   "lo": 23,
+   "rain": "low"
+  },
+  {
+   "month": 7,
+   "hi": 29,
+   "lo": 22,
+   "rain": "low"
+  },
+  {
+   "month": 8,
+   "hi": 29,
+   "lo": 22,
+   "rain": "low"
+  },
+  {
+   "month": 9,
+   "hi": 30,
+   "lo": 23,
+   "rain": "low"
+  },
+  {
+   "month": 10,
+   "hi": 31,
+   "lo": 24,
+   "rain": "low"
+  },
+  {
+   "month": 11,
+   "hi": 31,
+   "lo": 24,
+   "rain": "moderate"
+  },
+  {
+   "month": 12,
+   "hi": 30,
+   "lo": 24,
+   "rain": "heavy"
+  }
+ ],
+ "checklist": [
+  {
+   "label": "Passport valid for 6+ months for every traveller",
+   "category": "document"
+  },
+  {
+   "label": "Check current visa-on-arrival or e-VOA rules and the tourist levy",
+   "category": "document"
+  },
+  {
+   "label": "Travel insurance (strongly advised for scooters and water sports)",
+   "category": "document"
+  },
+  {
+   "label": "International driving permit if renting a scooter",
+   "category": "document"
+  },
+  {
+   "label": "Book accommodation",
+   "category": "booking"
+  },
+  {
+   "label": "Book flights to Bali (Denpasar, DPS)",
+   "category": "booking"
+  },
+  {
+   "label": "Book the Nusa Penida fast boat a few days ahead",
+   "category": "booking"
+  },
+  {
+   "label": "Reserve a Kecak dance or Ayung rafting slot",
+   "category": "booking"
+  },
+  {
+   "label": "Sarong or covered shoulders and knees for temples",
+   "category": "packing"
+  },
+  {
+   "label": "Reef-safe sunscreen, insect repellent and a rain jacket",
+   "category": "packing"
+  },
+  {
+   "label": "Some Indonesian rupiah for small shops and parking",
+   "category": "packing"
+  },
+  {
+   "label": "Download offline maps",
+   "category": "packing"
+  }
+ ],
+ "places": [
+  {
+   "id": "monkey_forest",
+   "name": "Sacred Monkey Forest Sanctuary",
+   "area": "ubud",
+   "lat": -8.5188,
+   "lon": 115.2589,
+   "topics": [
+    "nature",
+    "culture"
+   ],
+   "kind": "sight",
+   "duration_min": 90,
+   "cost_pp": 550,
+   "opens": "08:30",
+   "closes": "18:00",
+   "only_days": [],
+   "closed_months": [],
+   "note": "Forest temple complex with macaques. Keep food and sunglasses out of sight."
+  },
+  {
+   "id": "tegallalang",
+   "name": "Tegallalang Rice Terraces",
+   "area": "ubud",
+   "lat": -8.4312,
+   "lon": 115.2793,
+   "topics": [
+    "nature",
+    "cafes"
+   ],
+   "kind": "sight",
+   "duration_min": 90,
+   "cost_pp": 200,
+   "opens": "08:00",
+   "closes": "18:00",
+   "only_days": [],
+   "closed_months": [],
+   "note": "Terraced paddies with cafes over the valley. Swings and photo props cost extra."
+  },
+  {
+   "id": "tirta_empul",
+   "name": "Tirta Empul Water Temple",
+   "area": "ubud",
+   "lat": -8.4156,
+   "lon": 115.3153,
+   "topics": [
+    "culture"
+   ],
+   "kind": "sight",
+   "duration_min": 90,
+   "cost_pp": 250,
+   "opens": "08:00",
+   "closes": "18:00",
+   "only_days": [],
+   "closed_months": [],
+   "note": "Holy spring temple where visitors can join the purification ritual. A sarong is required."
+  },
+  {
+   "id": "ubud_market",
+   "name": "Ubud Palace and Art Market",
+   "area": "ubud",
+   "lat": -8.5069,
+   "lon": 115.2625,
+   "topics": [
+    "culture",
+    "shopping"
+   ],
+   "kind": "market",
+   "duration_min": 120,
+   "cost_pp": 0,
+   "opens": "08:00",
+   "closes": "18:00",
+   "only_days": [],
+   "closed_months": [],
+   "note": "Royal palace courtyard and the craft market across the road. Haggle politely."
+  },
+  {
+   "id": "tegenungan",
+   "name": "Tegenungan Waterfall",
+   "area": "ubud",
+   "lat": -8.5755,
+   "lon": 115.291,
+   "topics": [
+    "nature",
+    "adventure"
+   ],
+   "kind": "sight",
+   "duration_min": 75,
+   "cost_pp": 100,
+   "opens": "08:00",
+   "closes": "18:00",
+   "only_days": [],
+   "closed_months": [],
+   "note": "Easy-to-reach waterfall with a swimming pool at the base. Steep steps on the way back."
+  },
+  {
+   "id": "ayung_rafting",
+   "name": "White-water rafting on the Ayung River",
+   "area": "ubud",
+   "lat": -8.4868,
+   "lon": 115.2418,
+   "topics": [
+    "adventure",
+    "nature"
+   ],
+   "kind": "activity",
+   "duration_min": 210,
+   "cost_pp": 2400,
+   "opens": "08:00",
+   "closes": "16:00",
+   "only_days": [],
+   "closed_months": [],
+   "note": "Beginner-friendly rapids, with transfers included. Book ahead."
+  },
+  {
+   "id": "ubud_wellness",
+   "name": "Ubud spa or yoga session",
+   "area": "ubud",
+   "lat": -8.511,
+   "lon": 115.26,
+   "topics": [
+    "relaxation"
+   ],
+   "kind": "activity",
+   "duration_min": 120,
+   "cost_pp": 1500,
+   "opens": "09:00",
+   "closes": "19:00",
+   "only_days": [],
+   "closed_months": [],
+   "note": "A massage or a drop-in yoga class. Prices vary a lot by studio."
+  },
+  {
+   "id": "tanah_lot",
+   "name": "Tanah Lot Temple",
+   "area": "tanah_lot",
+   "lat": -8.6212,
+   "lon": 115.0868,
+   "topics": [
+    "culture",
+    "nature"
+   ],
+   "kind": "sight",
+   "duration_min": 90,
+   "cost_pp": 300,
+   "opens": "07:00",
+   "closes": "19:00",
+   "only_days": [],
+   "closed_months": [],
+   "note": "Sea temple on a rock, best near sunset. Crowded at golden hour."
+  },
+  {
+   "id": "seminyak_beach",
+   "name": "Seminyak Beach",
+   "area": "seminyak",
+   "lat": -8.6913,
+   "lon": 115.1566,
+   "topics": [
+    "beaches",
+    "relaxation",
+    "cafes"
+   ],
+   "kind": "sight",
+   "duration_min": 150,
+   "cost_pp": 0,
+   "opens": null,
+   "closes": null,
+   "only_days": [],
+   "closed_months": [],
+   "note": "Wide sand with sunset beach bars. Swim only between the flags."
+  },
+  {
+   "id": "surf_lesson",
+   "name": "Surf lesson at Kuta or Canggu",
+   "area": "seminyak",
+   "lat": -8.717,
+   "lon": 115.1686,
+   "topics": [
+    "adventure",
+    "beaches"
+   ],
+   "kind": "activity",
+   "duration_min": 150,
+   "cost_pp": 1900,
+   "opens": "07:00",
+   "closes": "17:00",
+   "only_days": [],
+   "closed_months": [],
+   "note": "Beginner-friendly lessons with boards included."
+  },
+  {
+   "id": "seminyak_shops",
+   "name": "Seminyak boutiques and Eat Street",
+   "area": "seminyak",
+   "lat": -8.683,
+   "lon": 115.16,
+   "topics": [
+    "shopping",
+    "food"
+   ],
+   "kind": "market",
+   "duration_min": 120,
+   "cost_pp": 300,
+   "opens": "10:00",
+   "closes": "21:00",
+   "only_days": [],
+   "closed_months": [],
+   "note": "Fashion and homeware shops with plenty of cafes."
+  },
+  {
+   "id": "seminyak_nightlife",
+   "name": "Seminyak and Canggu bars and beach clubs",
+   "area": "seminyak",
+   "lat": -8.68,
+   "lon": 115.156,
+   "topics": [
+    "nightlife"
+   ],
+   "kind": "nightlife",
+   "duration_min": 150,
+   "cost_pp": 1500,
+   "opens": "20:00",
+   "closes": "23:59",
+   "only_days": [],
+   "closed_months": [],
+   "note": "Lively bars and beach clubs. Cover charges and drinks add up."
+  },
+  {
+   "id": "uluwatu_temple",
+   "name": "Uluwatu Temple",
+   "area": "uluwatu",
+   "lat": -8.8291,
+   "lon": 115.0849,
+   "topics": [
+    "culture",
+    "nature"
+   ],
+   "kind": "sight",
+   "duration_min": 90,
+   "cost_pp": 250,
+   "opens": "07:00",
+   "closes": "19:00",
+   "only_days": [],
+   "closed_months": [],
+   "note": "Clifftop sea temple. Watch your belongings around the macaques."
+  },
+  {
+   "id": "kecak_dance",
+   "name": "Kecak fire dance at Uluwatu",
+   "area": "uluwatu",
+   "lat": -8.83,
+   "lon": 115.088,
+   "topics": [
+    "culture"
+   ],
+   "kind": "activity",
+   "duration_min": 60,
+   "cost_pp": 800,
+   "opens": "18:00",
+   "closes": "19:30",
+   "only_days": [],
+   "closed_months": [],
+   "note": "Evening performance at the cliff amphitheatre. Arrive early for good seats."
+  },
+  {
+   "id": "padang_padang",
+   "name": "Padang Padang and Bingin beaches",
+   "area": "uluwatu",
+   "lat": -8.8112,
+   "lon": 115.1013,
+   "topics": [
+    "beaches",
+    "relaxation"
+   ],
+   "kind": "sight",
+   "duration_min": 150,
+   "cost_pp": 100,
+   "opens": null,
+   "closes": null,
+   "only_days": [],
+   "closed_months": [],
+   "note": "Cliff-stair beaches below Uluwatu. Check the tide before you go."
+  },
+  {
+   "id": "jimbaran_seafood",
+   "name": "Jimbaran Bay seafood dinner",
+   "area": "uluwatu",
+   "lat": -8.79,
+   "lon": 115.164,
+   "topics": [
+    "food",
+    "beaches"
+   ],
+   "kind": "food",
+   "duration_min": 90,
+   "cost_pp": 1800,
+   "opens": "17:30",
+   "closes": "22:00",
+   "only_days": [],
+   "closed_months": [],
+   "note": "Grilled seafood on the sand at sunset. Agree prices before ordering."
+  },
+  {
+   "id": "batur_viewpoint",
+   "name": "Mount Batur and Kintamani viewpoint",
+   "area": "kintamani",
+   "lat": -8.2426,
+   "lon": 115.375,
+   "topics": [
+    "nature",
+    "food"
+   ],
+   "kind": "sight",
+   "duration_min": 120,
+   "cost_pp": 150,
+   "opens": "07:00",
+   "closes": "17:00",
+   "only_days": [],
+   "closed_months": [],
+   "note": "Volcano and caldera-lake views with a lunch buffet nearby. Sunrise treks leave around 3am and are booked separately."
+  },
+  {
+   "id": "nusa_penida",
+   "name": "Nusa Penida day trip (Kelingking and Angel's Billabong)",
+   "area": "nusa",
+   "lat": -8.75,
+   "lon": 115.4744,
+   "topics": [
+    "nature",
+    "adventure",
+    "beaches"
+   ],
+   "kind": "activity",
+   "duration_min": 480,
+   "cost_pp": 2500,
+   "opens": "07:00",
+   "closes": "18:00",
+   "only_days": [],
+   "closed_months": [],
+   "note": "Fast boat from Sanur plus a driver. Rough seas can cancel boats, so keep the day flexible."
+  }
+ ]
+}

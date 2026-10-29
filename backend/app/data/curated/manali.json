@@ -1,0 +1,516 @@
+{
+ "id": "manali",
+ "name": "Manali",
+ "aliases": [
+  "manali",
+  "himachal",
+  "kullu manali"
+ ],
+ "country": "India",
+ "lat": 32.2396,
+ "lon": 77.1887,
+ "peak_months": [
+  4,
+  5,
+  6,
+  12,
+  1
+ ],
+ "peak_multiplier": 1.4,
+ "notes": "Costs and timings are planning estimates (2025-26). Verify opening hours and prices before booking.",
+ "areas": [
+  {
+   "id": "manali_town",
+   "name": "Manali Town (Mall Road, Hadimba)",
+   "lat": 32.2432,
+   "lon": 77.1892
+  },
+  {
+   "id": "old_manali",
+   "name": "Old Manali",
+   "lat": 32.253,
+   "lon": 77.177
+  },
+  {
+   "id": "solang",
+   "name": "Solang Valley",
+   "lat": 32.316,
+   "lon": 77.158
+  },
+  {
+   "id": "rohtang",
+   "name": "Rohtang / Atal Tunnel",
+   "lat": 32.3716,
+   "lon": 77.2466
+  },
+  {
+   "id": "naggar",
+   "name": "Naggar & Kullu",
+   "lat": 32.113,
+   "lon": 77.174
+  }
+ ],
+ "travel_minutes": [
+  [
+   "manali_town",
+   "manali_town",
+   10
+  ],
+  [
+   "old_manali",
+   "old_manali",
+   10
+  ],
+  [
+   "solang",
+   "solang",
+   10
+  ],
+  [
+   "rohtang",
+   "rohtang",
+   10
+  ],
+  [
+   "naggar",
+   "naggar",
+   10
+  ],
+  [
+   "manali_town",
+   "old_manali",
+   10
+  ],
+  [
+   "manali_town",
+   "solang",
+   45
+  ],
+  [
+   "manali_town",
+   "rohtang",
+   120
+  ],
+  [
+   "manali_town",
+   "naggar",
+   60
+  ],
+  [
+   "old_manali",
+   "solang",
+   50
+  ],
+  [
+   "old_manali",
+   "rohtang",
+   125
+  ],
+  [
+   "old_manali",
+   "naggar",
+   55
+  ],
+  [
+   "solang",
+   "rohtang",
+   90
+  ],
+  [
+   "solang",
+   "naggar",
+   90
+  ],
+  [
+   "rohtang",
+   "naggar",
+   150
+  ]
+ ],
+ "stay_options": [
+  {
+   "tier": "budget",
+   "area": "old_manali",
+   "nightly_low": 1000,
+   "nightly_high": 2000,
+   "note": "Hostels and homestays"
+  },
+  {
+   "tier": "mid",
+   "area": "old_manali",
+   "nightly_low": 2500,
+   "nightly_high": 4000,
+   "note": "Riverside cottages"
+  },
+  {
+   "tier": "mid",
+   "area": "manali_town",
+   "nightly_low": 3000,
+   "nightly_high": 5000,
+   "note": "Hotels near Mall Road"
+  },
+  {
+   "tier": "premium",
+   "area": "manali_town",
+   "nightly_low": 8000,
+   "nightly_high": 14000,
+   "note": "Resorts with mountain views"
+  }
+ ],
+ "food_per_person_day": {
+  "budget": 700,
+  "mid": 1300,
+  "premium": 2500
+ },
+ "transport": [
+  {
+   "id": "cab_day",
+   "mode": "Local sightseeing cab",
+   "cost_inr": 2500,
+   "unit": "per_day_vehicle",
+   "capacity": 4,
+   "note": "Union taxis set fixed rates for Solang and Rohtang"
+  },
+  {
+   "id": "rohtang_cab",
+   "mode": "Rohtang day trip cab",
+   "cost_inr": 3500,
+   "unit": "per_trip_vehicle",
+   "capacity": 4,
+   "note": "Permit is separate"
+  }
+ ],
+ "climate": [
+  {
+   "month": 1,
+   "hi": 6,
+   "lo": -4,
+   "rain": "heavy"
+  },
+  {
+   "month": 2,
+   "hi": 8,
+   "lo": -2,
+   "rain": "moderate"
+  },
+  {
+   "month": 3,
+   "hi": 13,
+   "lo": 2,
+   "rain": "moderate"
+  },
+  {
+   "month": 4,
+   "hi": 18,
+   "lo": 6,
+   "rain": "moderate"
+  },
+  {
+   "month": 5,
+   "hi": 22,
+   "lo": 10,
+   "rain": "moderate"
+  },
+  {
+   "month": 6,
+   "hi": 24,
+   "lo": 13,
+   "rain": "moderate"
+  },
+  {
+   "month": 7,
+   "hi": 22,
+   "lo": 15,
+   "rain": "heavy"
+  },
+  {
+   "month": 8,
+   "hi": 21,
+   "lo": 14,
+   "rain": "heavy"
+  },
+  {
+   "month": 9,
+   "hi": 21,
+   "lo": 11,
+   "rain": "moderate"
+  },
+  {
+   "month": 10,
+   "hi": 18,
+   "lo": 5,
+   "rain": "low"
+  },
+  {
+   "month": 11,
+   "hi": 12,
+   "lo": 0,
+   "rain": "low"
+  },
+  {
+   "month": 12,
+   "hi": 8,
+   "lo": -3,
+   "rain": "moderate"
+  }
+ ],
+ "checklist": [
+  {
+   "label": "Government photo ID for every traveller",
+   "category": "document"
+  },
+  {
+   "label": "Travel insurance (optional but sensible)",
+   "category": "document"
+  },
+  {
+   "label": "Download offline maps",
+   "category": "packing"
+  },
+  {
+   "label": "Book accommodation",
+   "category": "booking"
+  },
+  {
+   "label": "Book travel to the destination",
+   "category": "booking"
+  },
+  {
+   "label": "Check Rohtang permit availability for your dates",
+   "category": "booking"
+  },
+  {
+   "label": "Warm layers, thermals and waterproof shoes",
+   "category": "packing"
+  },
+  {
+   "label": "Check road and snow conditions before heading out",
+   "category": "document"
+  }
+ ],
+ "places": [
+  {
+   "id": "hadimba",
+   "name": "Hadimba Devi Temple",
+   "area": "manali_town",
+   "lat": 32.2483,
+   "lon": 77.181,
+   "topics": [
+    "culture",
+    "nature"
+   ],
+   "kind": "sight",
+   "duration_min": 60,
+   "cost_pp": 0,
+   "opens": "08:00",
+   "closes": "18:00",
+   "only_days": [],
+   "closed_months": [],
+   "note": "Wooden temple in a cedar forest."
+  },
+  {
+   "id": "mall_road",
+   "name": "Mall Road",
+   "area": "manali_town",
+   "lat": 32.2432,
+   "lon": 77.1892,
+   "topics": [
+    "shopping",
+    "food",
+    "cafes"
+   ],
+   "kind": "market",
+   "duration_min": 120,
+   "cost_pp": 500,
+   "opens": "10:00",
+   "closes": "22:00",
+   "only_days": [],
+   "closed_months": [],
+   "note": "Evening stroll, woollens and snacks."
+  },
+  {
+   "id": "vashisht",
+   "name": "Vashisht hot springs",
+   "area": "manali_town",
+   "lat": 32.263,
+   "lon": 77.186,
+   "topics": [
+    "relaxation",
+    "culture"
+   ],
+   "kind": "sight",
+   "duration_min": 90,
+   "cost_pp": 0,
+   "opens": "06:00",
+   "closes": "20:00",
+   "only_days": [],
+   "closed_months": [],
+   "note": "Sulphur springs and a temple village across the river."
+  },
+  {
+   "id": "manu_temple",
+   "name": "Manu Temple",
+   "area": "manali_town",
+   "lat": 32.25,
+   "lon": 77.172,
+   "topics": [
+    "culture"
+   ],
+   "kind": "sight",
+   "duration_min": 45,
+   "cost_pp": 0,
+   "opens": "07:00",
+   "closes": "19:00",
+   "only_days": [],
+   "closed_months": [],
+   "note": "Old temple above Old Manali."
+  },
+  {
+   "id": "old_manali_cafes",
+   "name": "Old Manali cafe crawl",
+   "area": "old_manali",
+   "lat": 32.253,
+   "lon": 77.177,
+   "topics": [
+    "cafes",
+    "food",
+    "relaxation"
+   ],
+   "kind": "food",
+   "duration_min": 150,
+   "cost_pp": 600,
+   "opens": "09:00",
+   "closes": "23:00",
+   "only_days": [],
+   "closed_months": [],
+   "note": "Riverside cafes and live acoustic evenings."
+  },
+  {
+   "id": "solang_snow",
+   "name": "Solang Valley activities",
+   "area": "solang",
+   "lat": 32.316,
+   "lon": 77.158,
+   "topics": [
+    "adventure",
+    "nature"
+   ],
+   "kind": "activity",
+   "duration_min": 240,
+   "cost_pp": 1500,
+   "opens": "09:00",
+   "closes": "17:00",
+   "only_days": [],
+   "closed_months": [],
+   "note": "Ropeway, zorbing and snow or grass activities depending on season."
+  },
+  {
+   "id": "paragliding",
+   "name": "Paragliding at Solang",
+   "area": "solang",
+   "lat": 32.316,
+   "lon": 77.158,
+   "topics": [
+    "adventure"
+   ],
+   "kind": "activity",
+   "duration_min": 90,
+   "cost_pp": 3000,
+   "opens": "10:00",
+   "closes": "16:00",
+   "only_days": [],
+   "closed_months": [
+    1,
+    2
+   ],
+   "note": "Weather dependent. Often cancelled in heavy snow."
+  },
+  {
+   "id": "atal_tunnel",
+   "name": "Atal Tunnel and Sissu",
+   "area": "rohtang",
+   "lat": 32.3716,
+   "lon": 77.2466,
+   "topics": [
+    "nature",
+    "adventure"
+   ],
+   "kind": "sight",
+   "duration_min": 240,
+   "cost_pp": 1000,
+   "opens": "08:00",
+   "closes": "17:00",
+   "only_days": [],
+   "closed_months": [],
+   "note": "Engineering marvel with a valley on the other side."
+  },
+  {
+   "id": "rohtang_pass",
+   "name": "Rohtang Pass",
+   "area": "rohtang",
+   "lat": 32.3716,
+   "lon": 77.2466,
+   "topics": [
+    "nature",
+    "adventure"
+   ],
+   "kind": "activity",
+   "duration_min": 420,
+   "cost_pp": 1500,
+   "opens": "07:00",
+   "closes": "15:00",
+   "only_days": [],
+   "closed_months": [
+    12,
+    1,
+    2,
+    3,
+    4
+   ],
+   "note": "Permit required and the road is closed in winter."
+  },
+  {
+   "id": "naggar_castle",
+   "name": "Naggar Castle",
+   "area": "naggar",
+   "lat": 32.113,
+   "lon": 77.174,
+   "topics": [
+    "culture",
+    "nature"
+   ],
+   "kind": "sight",
+   "duration_min": 90,
+   "cost_pp": 50,
+   "opens": "09:00",
+   "closes": "18:00",
+   "only_days": [],
+   "closed_months": [],
+   "note": "Old castle above the Kullu valley."
+  },
+  {
+   "id": "rafting",
+   "name": "River rafting on the Beas",
+   "area": "naggar",
+   "lat": 32.02,
+   "lon": 77.11,
+   "topics": [
+    "adventure"
+   ],
+   "kind": "activity",
+   "duration_min": 150,
+   "cost_pp": 1200,
+   "opens": "09:00",
+   "closes": "16:00",
+   "only_days": [],
+   "closed_months": [
+    11,
+    12,
+    1,
+    2,
+    3
+   ],
+   "note": "Best from spring to early monsoon."
+  }
+ ]
+}
