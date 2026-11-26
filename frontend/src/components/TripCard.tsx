@@ -1,4 +1,4 @@
-import { ArrowUpRight, CalendarDays, MapPin, Trash2, Users, Wallet } from "lucide-react";
+import { ArrowUpRight, CalendarDays, LogOut, MapPin, Trash2, Users, Wallet } from "lucide-react";
 import { Link } from "react-router-dom";
 import { dateRange, dayCount, money } from "../lib/format";
 import type { TripSummary } from "../lib/types";
@@ -6,7 +6,7 @@ import { Badge } from "./ui";
 
 export const statusLabel = (s: string) => (s === "itinerary_ready" ? "Itinerary ready" : "Planning");
 
-export function TripCard({ trip, onDelete }: { trip: TripSummary; onDelete?: (trip: TripSummary) => void }) {
+export function TripCard({ trip, onDelete, onLeave }: { trip: TripSummary; onDelete?: (trip: TripSummary) => void; onLeave?: (trip: TripSummary) => void }) {
   const budget = trip.budget_total ?? (trip.budget_per_person ? trip.budget_per_person * trip.travelers_count : null);
   const ready = trip.status === "itinerary_ready";
   const initial = (trip.destination ?? trip.name).trim().charAt(0).toUpperCase() || "T";
@@ -37,6 +37,21 @@ export function TripCard({ trip, onDelete }: { trip: TripSummary; onDelete?: (tr
             aria-label={`Delete ${trip.name}`}
           >
             <Trash2 className="h-4 w-4" />
+          </button>
+        )}
+        {trip.my_role === "member" && onLeave && (
+          <button
+            type="button"
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              onLeave(trip);
+            }}
+            className="-mr-1 -mt-1 flex min-h-[44px] min-w-[44px] shrink-0 items-center justify-center rounded-xl text-coral-500 transition-colors hover:bg-coral-100 hover:text-coral-700"
+            title={`Leave ${trip.name}`}
+            aria-label={`Leave ${trip.name}`}
+          >
+            <LogOut className="h-4 w-4" />
           </button>
         )}
       </div>

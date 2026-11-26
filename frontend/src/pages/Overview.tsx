@@ -3,6 +3,7 @@ import { ArrowRight, CalendarDays, KeyRound, Luggage, Map, Plus, Users } from "l
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { DeleteTripDialog } from "../components/DeleteTripDialog";
+import { LeaveTripDialog } from "../components/LeaveTripDialog";
 import { TripCard } from "../components/TripCard";
 import { EmptyState, PageLoader, QueryError } from "../components/ui";
 import { useAuth } from "../context/AuthContext";
@@ -10,7 +11,7 @@ import { api } from "../lib/api";
 import { todayISO } from "../lib/format";
 import type { TripSummary } from "../lib/types";
 
-function Section({ title, trips, onDelete }: { title: string; trips: TripSummary[]; onDelete: (t: TripSummary) => void }) {
+function Section({ title, trips, onDelete, onLeave }: { title: string; trips: TripSummary[]; onDelete: (t: TripSummary) => void; onLeave: (t: TripSummary) => void }) {
   if (!trips.length) return null;
   return (
     <section className="mt-7 sm:mt-9">
@@ -19,7 +20,7 @@ function Section({ title, trips, onDelete }: { title: string; trips: TripSummary
         <span className="rounded-full bg-lagoon-50 px-2.5 py-0.5 text-xs font-bold text-lagoon-700 ring-1 ring-inset ring-lagoon-200">{trips.length}</span>
         <span className="h-px flex-1 bg-gradient-to-r from-sand-300 to-transparent" aria-hidden />
       </div>
-      <div className="grid gap-4 sm:gap-5 md:grid-cols-2 xl:grid-cols-3">{trips.map((t) => <TripCard key={t.id} trip={t} onDelete={onDelete} />)}</div>
+      <div className="grid gap-4 sm:gap-5 md:grid-cols-2 xl:grid-cols-3">{trips.map((t) => <TripCard key={t.id} trip={t} onDelete={onDelete} onLeave={onLeave} />)}</div>
     </section>
   );
 }
@@ -37,6 +38,7 @@ export default function Overview() {
   const { user } = useAuth();
   const q = useQuery({ queryKey: ["trips"], queryFn: () => api<TripSummary[]>("/api/trips") });
   const [tripToDelete, setTripToDelete] = useState<TripSummary | null>(null);
+  const [tripToLeave, setTripToLeave] = useState<TripSummary | null>(null);
   const today = todayISO();
   const trips = q.data ?? [];
   const upcoming = trips.filter((t) => t.end_date >= today);
@@ -86,13 +88,14 @@ export default function Overview() {
           </div>
         ) : (
           <>
-            <Section title="Upcoming trips" trips={upcoming} onDelete={setTripToDelete} />
-            <Section title="Trips you’ve joined" trips={joined} onDelete={setTripToDelete} />
-            <Section title="Recently opened" trips={recent} onDelete={setTripToDelete} />
+            <Section title="Upcoming trips" trips={upcoming} onDelete={setTripToDelete} onLeave={setTripToLeave} />
+            <Section title="Trips you’ve joined" trips={joined} onDelete={setTripToDelete} onLeave={setTripToLeave} />
+            <Section title="Recently opened" trips={recent} onDelete={setTripToDelete} onLeave={setTripToLeave} />
             {upcoming.length === 0 && <p className="mt-8 text-ink-500">All your trips have already ended. <Link className="inline-flex items-center gap-1 font-semibold text-lagoon-700 underline" to="/app/trips">See them in My Trips<ArrowRight className="h-3.5 w-3.5" aria-hidden /></Link>.</p>}
           </>
         )}
       {tripToDelete && <DeleteTripDialog trip={tripToDelete} onClose={() => setTripToDelete(null)} />}
+      {tripToLeave && <LeaveTripDialog trip={tripToLeave} onClose={() => setTripToLeave(null)} />}
     </div>
   );
 }

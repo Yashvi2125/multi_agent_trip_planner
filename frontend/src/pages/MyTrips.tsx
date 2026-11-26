@@ -3,6 +3,7 @@ import { Luggage, Plus } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { DeleteTripDialog } from "../components/DeleteTripDialog";
+import { LeaveTripDialog } from "../components/LeaveTripDialog";
 import { TripCard } from "../components/TripCard";
 import { EmptyState, PageLoader, QueryError } from "../components/ui";
 import { api } from "../lib/api";
@@ -12,6 +13,7 @@ export default function MyTrips() {
   const q = useQuery({ queryKey: ["trips"], queryFn: () => api<TripSummary[]>("/api/trips") });
   const [filter, setFilter] = useState<"all" | "owner" | "member">("all");
   const [tripToDelete, setTripToDelete] = useState<TripSummary | null>(null);
+  const [tripToLeave, setTripToLeave] = useState<TripSummary | null>(null);
 
   const trips = (q.data ?? []).filter((t) => filter === "all" || t.my_role === filter);
   return (
@@ -34,12 +36,13 @@ export default function MyTrips() {
             action={q.data?.length ? undefined : <Link to="/app/trips/new" className="btn-primary">Create Your First Trip</Link>} /> :
             <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
               {trips.map((t) => (
-                <TripCard key={t.id} trip={t} onDelete={(trip) => setTripToDelete(trip)} />
+                <TripCard key={t.id} trip={t} onDelete={(trip) => setTripToDelete(trip)} onLeave={(trip) => setTripToLeave(trip)} />
               ))}
             </div>}
       </div>
 
       {tripToDelete && <DeleteTripDialog trip={tripToDelete} onClose={() => setTripToDelete(null)} />}
+      {tripToLeave && <LeaveTripDialog trip={tripToLeave} onClose={() => setTripToLeave(null)} />}
     </div>
   );
 }
